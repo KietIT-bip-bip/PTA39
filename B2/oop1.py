@@ -1,9 +1,9 @@
-# oop: object-oriented promgramming
+# oop: object-oriented promgramming------dấu "." = call
 # tao lop vat nuoi(giong, mau sac, tuoi, can nang)
 
 # VatNuoi: kieu du lieu tham chieu (doi tuong)
 class VatNuoi:
-    # khai bao thuoc tinh
+    # khai bao thuoc tinh (property)
     def __init__(self, giong="", mauSac="", tuoi=0, canNang=0):
         # __ : private
         self.__giong = giong
