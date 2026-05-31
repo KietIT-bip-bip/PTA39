@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailsWindow</class>
+ <widget class="QMainWindow" name="DetailsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>628</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>628</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>details</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    /* Tổng thể cửa sổ */
+    QMainWindow {
+        background-color: #FDFDFD;
+    }
+    
+    QWidget#centralwidget {
+        background-color: #FDFDFD;
+    }
+
+    /* Tiêu đề chính */
+    QLabel#titleLabel {
+        color: #2C3E50;
+        font-family: &quot;Segoe UI&quot;, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        border: none;
+        margin-top: 10px;
+    }
+
+    /* Đường kẻ ngang separator */
+    QFrame#lineSeparator {
+        color: #D5DBDB;
+        background-color: #D5DBDB;
+        max-height: 1px;
+    }
+
+    /* Nội dung văn bản */
+    QLabel#contentLabel {
+        color: #566573;
+        font-family: &quot;Segoe UI&quot;;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 5px;
+    }
+
+    /* Thanh chứa nút bấm ở dưới */
+    QWidget#footerWidget {
+        background-color: #F4F7F6;
+        border-top: 1px solid #EAECEE;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    /* Định dạng chung cho các nút bấm (Thay cho icon) */
+    QPushButton {
+        background-color: transparent;
+        color: #5DADE2;
+        border: 1px solid #AED6F1;
+        border-radius: 4px;
+        padding: 5px 10px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    QPushButton:hover {
+        background-color: #EBF5FB;
+        border: 1px solid #5DADE2;
+    }
+
+    /* Nút Close đặc biệt */
+    QPushButton#closeButton {
+        background-color: #EAECEE;
+        color: #2C3E50;
+        border: 1px solid #D5DBDB;
+        min-width: 80px;
+    }
+    QPushButton#closeButton:hover {
+        background-color: #D5DBDB;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>628</width>
+     <height>400</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>628</width>
+     <height>400</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+	background: #FAFAD2;
+}
+#footerWidget	{
+	background: #F5F5DC;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>30</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>30</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>Lorem Ipsum</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="contentLabel">
+      <property name="text">
+       <string>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="lineSeparator">
+      <property name="frameShape">
+       <enum>QFrame::HLine</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="footerWidget" native="true">
+      <layout class="QHBoxLayout" name="footerLayout">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btn1">
+         <property name="text">
+          <string>HOME</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn2">
+         <property name="text">
+          <string>USER</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn3">
+         <property name="text">
+          <string>ADD</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn4">
+         <property name="text">
+          <string>IMG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn5">
+         <property name="text">
+          <string>UNDO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn6">
+         <property name="text">
+          <string>REDO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="closeButton">
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
